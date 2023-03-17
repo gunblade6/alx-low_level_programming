@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+/**
+ *	main - print alphabt
+ *
+ *	Description: print all alphabet letters
+ *	except [e, q]
+ *
+ *	Return: alphabet in lowercase and in order except 'e' and 'q'
+ *
+ */
 int main(void)
 {
 	char i;
