@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h> 
 
 void print_alphabet();
 
@@ -19,9 +19,9 @@ void print_alphabet()
 	int i = 97;
 	while (i <= 122)
 	{
-		putchar(i);
+		_putchar(i);
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return;
 }
