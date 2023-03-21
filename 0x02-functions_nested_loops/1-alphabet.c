@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void print_alphabet();
+
 /**
  * main - print alphabet
  *
