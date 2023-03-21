@@ -1,19 +1,12 @@
 #include <unistd.h> 
 #include "main.h"
 
-void print_alphabet(void);
-
 /**
- * main - print alphabet
+ * print_alphabet - print alphabet
  *
- *	Return: always 0
+ *	Return: void
  *
  */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void)
 {
@@ -24,5 +17,4 @@ void print_alphabet(void)
     i++;
   }
   _putchar('\n');
-  return;
 }
