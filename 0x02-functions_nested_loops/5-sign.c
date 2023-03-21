@@ -2,7 +2,7 @@
 
 int print_sign(int n)
 {
-	int negative = -1;
+	int zero = 0;
 
 	if (n > 0)
 	{
@@ -11,8 +11,8 @@ int print_sign(int n)
 	}
 	else if (n < 0)
 	{
-		_putchar(negative);
-		return (negative);
+		_putchar(zero - 1);
+		return (zero - 1);
 	}
 	else
 	{
