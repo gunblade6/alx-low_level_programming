@@ -1,7 +1,7 @@
 #include <unistd.h> 
 #include "main.h"
 
-void print_alphabet()
+int print_alphabet()
 {
   int i = 97;
   while (i <= 122)
@@ -10,7 +10,7 @@ void print_alphabet()
     i++;
   }
   _putchar('\n');
-  return;
+  return 0;
 }
 
 /**
