@@ -5,7 +5,7 @@
  *
  *	Return: 123456789
  *
- * */
+ */
 
 void print_numbers(void)
 {
