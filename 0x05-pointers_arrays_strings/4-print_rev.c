@@ -18,7 +18,7 @@ void print_rev(char *s)
 		s++;
 	}
 
-	char arr[len];
+	char *arr[len];
 	int index = 0;
 
 	i = len - 1;
