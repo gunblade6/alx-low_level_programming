@@ -10,7 +10,7 @@ void print_rev(char *s)
 {
 	int len = 0;
 	int i;
-	char *string = s;
+	char **string = &s;
 
 	while (*s != '\0')
 	{
@@ -18,7 +18,7 @@ void print_rev(char *s)
 		s++;
 	}
 
-	char *arr[len];
+	char arr[len];
 	int index = 0;
 
 	i = len - 1;
