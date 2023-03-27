@@ -13,7 +13,7 @@ void print_rev(char *s)
 	char arr[len];
 	int index = 0;
 
-	for (in i = len - 1; i <= 0; i--)
+	for (int i = len - 1; i <= 0; i--)
 	{
 		arr[index] = s[i];
 		index++;
