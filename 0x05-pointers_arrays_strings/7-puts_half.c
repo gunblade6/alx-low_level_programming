@@ -9,6 +9,6 @@
  */
 void puts_half(char *str)
 {
-	len = _strlen(str);
+	int len = _strlen(str);
 	printf("%d", len);
 }
