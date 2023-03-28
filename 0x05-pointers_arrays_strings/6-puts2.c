@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ *	puts2 - return ever other char
+ *	@str: string
+ *	Return: every other character from a string
+ *
+ */
 
 void puts2(char *str)
 {
