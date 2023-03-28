@@ -20,10 +20,6 @@ void puts_half(char *str)
 	}
 	i = 0;
 	half = len / 2;
-
-	while (i < half)
-	{
-		_putchar(str+half);
-	}
 	
+	printf("%s", str + half)
 }
