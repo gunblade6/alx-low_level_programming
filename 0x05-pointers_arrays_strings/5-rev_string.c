@@ -16,7 +16,7 @@ void rev_string(char *s)
 	}
 
 	len -= 1;
-	char newString[10];
+	char *newString;
 
 	while (i < len)
 	{
