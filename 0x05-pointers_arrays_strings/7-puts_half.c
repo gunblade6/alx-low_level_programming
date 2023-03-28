@@ -9,6 +9,16 @@
  */
 void puts_half(char *str)
 {
-	int len = _strlen(str);
-	printf("%d", len);
+	int len = 0;
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		len++;
+		i++;
+	}
+
+	int middle = len / 2;
+
+	*s += middle;
 }
