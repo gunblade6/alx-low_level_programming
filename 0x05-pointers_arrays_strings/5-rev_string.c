@@ -16,8 +16,8 @@ void rev_string(char *s)
 	}
 
 	len -= 1;
-
-	char newString[len];
+	const int length = len;
+	char newString[length];
 
 	while (i < len)
 	{
