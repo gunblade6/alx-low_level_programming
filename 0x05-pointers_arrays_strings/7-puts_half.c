@@ -20,5 +20,5 @@ void puts_half(char *str)
 
 	int middle = len / 2;
 
-	*s += middle;
+	*str += middle;
 }
