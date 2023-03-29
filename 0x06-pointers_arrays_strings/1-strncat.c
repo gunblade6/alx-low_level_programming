@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *	_strncar - concat string untill n characters
+ *	_strncat - concat string untill n characters
  *	@dest: destination string
  *	@src: source string
  *	@n: number of characters wantet
