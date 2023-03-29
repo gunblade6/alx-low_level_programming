@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ *	_strncar - concat string untill n characters
+ *	@dest: destination string
+ *	@src: source string
+ *	@n: number of characters wantet
+ *	Return: pointer to new string
+ */
 char *_strncat(char *dest, char *src, int n)
 {
 	int destLen = 0;
