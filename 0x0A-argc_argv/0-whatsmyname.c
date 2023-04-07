@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - print the name of the program
+ * @argc: the number of arguments
+ * @argv: array of arguments
+ * Return: the name of the program
+ */
 int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[0]);
