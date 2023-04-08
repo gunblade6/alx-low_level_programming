@@ -15,23 +15,23 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		printf("%d\n", total);
-		return (0);
+		printf("%d\n", 0);
 	}
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		if (!atoi(argv[i]))
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!atoi(argv[i]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+			{
+				total += atoi(argv[i]);
+			}
 		}
-		else
-		{
-			total += atoi(argv[i]);
-		}
+		printf("%d\n", total);
 	}
-
-	printf("%d\n", total);
 	return (0);
 }
