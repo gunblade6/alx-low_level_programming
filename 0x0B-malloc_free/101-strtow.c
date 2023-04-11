@@ -23,7 +23,7 @@ char **strtow(char *str)
 	if (str[0] == ' ')
 	{
 		printf("Failed");
-		return (1);
+		return (NULL);
 	}
 	arr = malloc((count + 1) * sizeof(char *));
 	if (arr == NULL)
