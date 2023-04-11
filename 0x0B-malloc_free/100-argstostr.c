@@ -5,8 +5,10 @@
 
 /**
  *	argstostr - concat all arguments
+ *	Description: concatinate all argument strings
  *	@ac: number or arguments
  *	@av: array of arguments
+ *	Return: pointer to new string
  */
 char *argstostr(int ac, char **av)
 {
