@@ -3,6 +3,11 @@
 #include <string.h>
 #include "main.h"
 
+/**
+ *	_strdup - copy of a string
+ *	@str: input string
+ *	Return: a pointer to copied string
+ */
 char *_strdup(char *str)
 {
 	int i, length;
