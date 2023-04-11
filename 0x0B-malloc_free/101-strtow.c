@@ -21,8 +21,10 @@ char **strtow(char *str)
 			count++;
 	}
 	if (str == " ")
+	{
 		printf("Failed");
 		return (1);
+	}
 	arr = malloc((count + 1) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);
@@ -30,7 +32,6 @@ char **strtow(char *str)
 	{
 		while (*str == ' ')
 			str++;
-
 		len = 0;
 		while (str[len] != ' ' && str[len] != '\0')
 			len++;
@@ -45,7 +46,6 @@ char **strtow(char *str)
 		}
 		for (j = 0; j < len; j++)
 			arr[i][j] = *str++;
-
 		arr[i][j] = '\0';
 	}
 	arr[i] = NULL;
