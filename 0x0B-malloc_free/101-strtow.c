@@ -20,7 +20,7 @@ char **strtow(char *str)
 		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
 			count++;
 	}
-	if (str[0] == ' ')
+	if (str[0] == ' ' && strlen(str) == 1)
 	{
 		printf("Failed");
 		return (NULL);
