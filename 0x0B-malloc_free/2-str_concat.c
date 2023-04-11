@@ -12,7 +12,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concatenatedString;
-	int s1Len, s2Len, i, j;
+	int s1Len, s2Len, i, j, bothLen;
 
 	if (s1 == NULL)
 	{
@@ -23,10 +23,10 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	s1Len = strlen(s1);	
+	s1Len = strlen(s1);
 	s2Len = strlen(s2);
 
-	concatenatedString = malloc(s1Len + s2Len + 1);	
+	concatenatedString = malloc(s1Len + s2Len + 1);
 	if (concatenatedString == NULL)
 	{
 		return (NULL);
@@ -36,10 +36,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatenatedString[i] = s1[i];
 	}
-	for (i = 0, j = s1Len; j < s2Len; i++, j++)
+	for (i = 0, j = s1Len, bothLen = s1Len + s2Len; j < bothLen; i++, j++)
 	{
 		concatenatedString[j] = s2[i];
 	}
+	concatenatedString[s1Len + s2Len] = '\0';
 
 	return (concatenatedString);
 }
