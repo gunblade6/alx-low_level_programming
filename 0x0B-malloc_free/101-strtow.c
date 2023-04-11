@@ -15,17 +15,17 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
 			count++;
 	}
-
+	if (str == " ")
+		printf("Failed");
+		return (1);
 	arr = malloc((count + 1) * sizeof(char *));
 	if (arr == NULL)
 		return (NULL);
-
 	for (i = 0; i < count; i++)
 	{
 		while (*str == ' ')
