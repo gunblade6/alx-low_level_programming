@@ -12,15 +12,15 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *concatenatedString;
-	int reqMemory, s1Len, s2Len, i, j;
+	int s1Len, s2Len, i, j;
 
 	if (s1 == NULL)
 	{
-		s1 = '';
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		s2 = '';
+		s2 = "";
 	}
 
 	s1Len = strlen(s1);	
