@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (newString == NULL)
 		return (NULL);
 
-	memcpy(newString, s1);
+	memcpy(newString, s1, s1Len);
 	memcpy(newString + s1Len, s2, n);
 	newString[wantedLen] = '\0';
 
