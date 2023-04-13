@@ -17,7 +17,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 		s1 = "";
-	if (s1 == NULL)
+	if (s2 == NULL)
 		s2 = "";
 
 	s1Len = strlen(s1);
@@ -32,11 +32,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	
 	if (n >= s2Len)
 	{
-		memcpy(newString, s2);
+		memcpy(newString + s1Len, s2);
 	}
 	else
 	{
-		memcpy(newString, s2, n);
+		memcpy(newString + s1Len, s2, n);
 	}
 
 	return (newString);
