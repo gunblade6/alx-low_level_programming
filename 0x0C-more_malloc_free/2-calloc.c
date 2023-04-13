@@ -4,10 +4,10 @@
 #include "main.h"
 
 /**
- *	_calloc - allocate memory for a string
- *	@nmemb: array elements size
- *	@size: every element size in bytes
- *	Return: pointer to new array
+ * *_calloc - function to allocates memory
+ * @nmemb: unsigned int type
+ * @size: unsigned int type
+ * Return: return pointer to array
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
