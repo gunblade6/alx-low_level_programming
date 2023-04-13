@@ -22,6 +22,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	s1Len = strlen(s1);
 	s2Len = strlen(s2);
+	if (n > s2Len)
+		n = s2Len;
+
 	wantedLen = s1Len + n;
 
 	newString = malloc(wantedLen + 1);
@@ -29,15 +32,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	memcpy(newString, s1);
-	
-	if (n >= s2Len)
-	{
-		memcpy(newString + s1Len, s2);
-	}
-	else
-	{
-		memcpy(newString + s1Len, s2, n);
-	}
+	memcpy(newString + s1Len, s2, n);
+	newString[wantedLen + 1] = '\0';
 
 	return (newString);
 }
