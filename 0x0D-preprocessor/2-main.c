@@ -2,7 +2,7 @@
 #define FILE_H
 #include <stdio.h>
 
-/*
+/**
  *	main - print my name
  *	Return: always 0
  */
